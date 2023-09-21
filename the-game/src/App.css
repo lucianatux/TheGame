@@ -11,7 +11,6 @@
   --second-color: #9d3172;
   --third-color: #d3a61d;
   --fourth-color: #176589;
-
 }
 /************ Default Css ************/
 * {
@@ -31,16 +30,25 @@ body {
   position: relative;
   background-color: var(--dark-color) !important;
   color: var(--light-color) !important;
-  font-family: 'Centra', sans-serif !important;
+  font-family: "Centra", sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
 }
 
-p, a, li, button, ul {
+p,
+a,
+li,
+button,
+ul {
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -50,22 +58,62 @@ p, a, li, button, ul {
 a:hover {
   text-decoration: none;
 }
-
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
+@media (min-width: 1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
 }
-
 .App {
   text-align: center;
 }
+.title {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.arrow{
+  font-size: 30px;
+  font-weight: 500;
+}
+.arrow-up{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+.arrow-down{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+.arrow-left{
+  position: absolute;
+  top: 55%;
+  left: 5%;
+}
+.arrow-right{
+  position: absolute;
+  top: 55%;
+  left: 95%;
+}
+.eye{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+}
+.game-button {
+  border: 2px solid var(--grey2-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+.game-button:hover {
+  border: 2px solid var(--grey1-color);
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
 
 /************ Navbar Css ************/
-
-.navbar {
-  background-color: var(--dark-color); 
+.main-navbar {
+  background-color: var(--dark-color);
   color: var(--light-color);
   padding: 10px 0;
   width: 100%;
@@ -73,58 +121,72 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
-.item{
+.item {
   color: var(--light-color);
   font-size: 20px;
   margin: 0 15px;
 }
 .logo {
-  max-width: 60px;
+  max-width: 40px;
   border-radius: 15px;
   margin: 0 20px;
 }
+.navbarbrand{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.the-game{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  letter-spacing: -3px;
+}
 .social-icon {
-    display: inline-block;
+  display: inline-block;
 }
 .social-icon a {
-    width: 42px;
-    height: 42px;
-    background: var(--transp1-color);
-    display: inline-flex;
-    border-radius: 50%;
-    margin-right: 6px;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    border: 1px solid var(--transp2-color);
+  width: 42px;
+  height: 42px;
+  background: var(--transp1-color);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid var(--transp2-color);
 }
 .social-icon a::before {
-    content: "";
-    width: 42px;
-    height: 42px;
-    position: absolute;
-    background-color: var(--light-color);
-    border-radius: 50%;
-    transform: scale(0);
-	transition: 0.3s ease-in-out;
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: var(--light-color);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
 }
 .social-icon a:hover::before {
-    transform: scale(1);
+  transform: scale(1);
 }
 .social-icon a img {
-	width: 40%;
-	z-index: 1;
-	transition: 0.3s ease-in-out;
+  width: 40%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
 }
 .social-icon a:hover img {
-	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg) brightness(95%) contrast(86%);
 }
-@media (max-width:600px) {
-	.navbar {
+@media (max-width: 600px) {
+  .navbar {
     display: flex;
     flex-direction: column;
   }
-  .item, .logo, .social-icon{
+  .item,
+  .logo,
+  .social-icon {
     margin: 10px;
   }
 }
@@ -134,24 +196,60 @@ a:hover {
   background-color: var(--first-color);
   width: 100%;
   height: 100vh;
-  text-align: center; 
+  text-align: center;
 }
-.title{
-font-size: 30px;
-}
-.div-button{
-  height:70vh;
+.div-start-button {
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.start-button {
-  border: 2px solid var(--grey2-color);
-  border-radius: 10px;
+
+/************ Intro Css ************/
+#intro {
+  background-color: var(--dark-color);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
   padding: 10px;
 }
-.start-button:hover {
-  border: 2px solid var(--grey1-color);
-  background-color: var(--dark-color);
-  color:var(--light-color)
+/************ Info Css ************/
+#info {
+  background-color: var(--grey1-color);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding: 10px;
 }
+/************ Room Css ************/
+#room {
+  background-color: var(--grey2-color);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+/************ InnerPanel Css ************/
+#innerpanel {
+  background-color: var(--dark-color);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding: 10px;
+}
+/************ OuterPanel Css ************/
+#outerpanel {
+  width: 100%;
+  text-align: center;
+}
+.outer-navbar {
+  background-color: var(--fourth-color);
+  color: var(--light-color);
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.outer-navbar a{
+  margin: 0 15px;
+}
+

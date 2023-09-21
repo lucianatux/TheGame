@@ -8,9 +8,9 @@ export const Home = () => {
       <Container>
         <NavBar/>
         <div className="title">Home</div>
-        <div className="div-button">
+        <div className="div-start-button">
           <Link to="/intro">
-            <button className="start-button">START</button>
+            <button className="game-button">START</button>
           </Link>
         </div>
       </Container>

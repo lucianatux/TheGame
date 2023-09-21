@@ -4,6 +4,8 @@ import { Home } from "./components/Home";
 import { Info } from "./components/Info";
 import { Intro } from "./components/Intro";
 import { Room } from "./components/Room";
+import { InnerPanel } from "./components/InnerPanel";
+import { OuterPanel } from "./components/OuterPanel";
 
 
 const router = createBrowserRouter([
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: "/room",
     element: <Room />,
+  },
+  {
+    path: "/innerpanel",
+    element: <InnerPanel />,
+  },
+  {
+    path: "/outerpanel",
+    element: <OuterPanel />,
   },
 ]);
 
