@@ -1,0 +1,97 @@
+/************ Colors ************/
+
+:root {
+  --light-color: #e6e6e6;
+  --dark-color: #010101;
+  --grey1-color: #444;
+  --grey2-color: #999;
+  --transp1-color: #d9d9d91a;
+  --transp2-color: #ffffff80;
+  --first-color: #410cab;
+  --second-color: #9d3172;
+  --third-color: #d3a61d;
+  --fourth-color: #176589;
+
+}
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: var(--dark-color) !important;
+  color: var(--light-color) !important;
+  font-family: 'Centra', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
+
+.App {
+  text-align: center;
+}
+
+/************ Home Css ************/
+.home {
+  background-color: var(--first-color);
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center; 
+}
+.title{
+font-size: 30px;
+}
+.div-button{
+  height:70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.start-button {
+  border: 2px solid var(--grey2-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+.start-button:hover {
+  border: 2px solid var(--grey1-color);
+  background-color: var(--dark-color);
+  color:var(--light-color)
+}
