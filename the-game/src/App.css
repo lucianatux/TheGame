@@ -51,11 +51,6 @@ a:hover {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 @media (min-width:1700px) {
 	main .container {
 		max-width: 100%;
@@ -65,6 +60,64 @@ img {
 
 .App {
   text-align: center;
+}
+
+/************ Navbar Css ************/
+
+.navbar {
+  background-color: var(--dark-color); 
+  color: var(--light-color);
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item{
+  color: var(--light-color);
+  margin: 14px;
+}
+.logo {
+  max-width: 70px;
+  border-radius: 15px;
+  margin: 14px;
+}
+.social-icon {
+    display: inline-block;
+    margin: 14px;
+}
+.social-icon a {
+    width: 42px;
+    height: 42px;
+    background: var(--transp1-color);
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid var(--transp2-color);
+}
+.social-icon a::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    transform: scale(0);
+	transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+    transform: scale(1);
+}
+.social-icon a img {
+	width: 40%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+.social-icon a:hover img {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
 /************ Home Css ************/
