@@ -9,11 +9,11 @@ export const Intro = () => {
       <Container>
         <div className="title">Intro</div>
         <p>lorem ipsum dolor sit amet, consectetur adip</p>
-        <img src={planeta} alt="planeta"/>
-        <div className="div-room-button">
-          <Link to="/room">
-            <button className="game-button">ROOM</button>
+        <Link to="/room">
+            <img src={planeta} alt="planeta" className="planeta"/>
           </Link>
+        <div className="div-room-button">
+          
         </div>
       </Container>
     </section>

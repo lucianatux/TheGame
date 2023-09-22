@@ -16,9 +16,6 @@ import { Responses } from "./components/Responses";
 import { Thoughts } from "./components/Thoughts";
 import { World } from "./components/World";
 
-
-
-
 const router = createBrowserRouter([
   {
     path: "/",
