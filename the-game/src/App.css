@@ -224,7 +224,7 @@ a:hover {
   top: 80%; 
   left: 50%; 
   transform: translateX(-50%); /* Centra la imagen horizontalmente */
-  animation: expandAndMoveUp 20s ease forwards;
+  animation: expandAndMoveUp 15s ease forwards;
 }
 /*animación expandAndMoveUp */
 @keyframes expandAndMoveUp {
@@ -234,6 +234,13 @@ a:hover {
     opacity: 1;
     top: 80%; 
   }
+  30% {
+    width: 50px; 
+    height: 50px; 
+    opacity: 1; 
+    top: 80%;
+    left: 50%;
+  }
   100% {
     width: 3000px; 
     height: 3000px; 
@@ -242,6 +249,45 @@ a:hover {
     left: 20%;
   }
 }
+
+.shooting-star1 {
+  width: 2px;
+  height: 2px;
+  background-color: var(--grey2-color);
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-100%) translateX(70vw); /* Inicialmente, la estrella está fuera de la vista arriba */
+  animation: estrellaFugaz1 30s linear forwards; /* Ajusta la duración según tus preferencias */
+}
+
+@keyframes estrellaFugaz1 {
+  0% {
+    transform: translateY(-100%) translateX(70vw);
+  }
+  100% {
+    transform: translateY(100vh) translateX(90vw); /* Desciende hasta fuera de la vista abajo */
+  }
+}
+
+.shooting-star2 {
+  width: 2px;
+  height: 2px;
+  background-color: var(--light-color);
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(50vh) translateX(30vw); /* Inicialmente, la estrella está fuera de la vista arriba */
+  animation: estrellaFugaz2 40s linear forwards; 
+}
+@keyframes estrellaFugaz2 {
+  0% {
+    transform: translateY(50vh) translateX(30vw);
+  }
+  100% {
+    transform: translateY(100vh) translateX(5vw); /* Desciende hasta fuera de la vista abajo */
+  }
+}
+
+
 
 /************ Info Css ************/
 #info {

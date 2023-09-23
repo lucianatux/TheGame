@@ -10,6 +10,8 @@ export const Intro = () => {
         <div className="title">Intro</div>
         <p>lorem ipsum dolor sit amet, consectetur adip</p>
         <Link to="/room">
+          <div className="shooting-star1"></div>
+          <div className="shooting-star2"></div>
             <img src={planeta} alt="planeta" className="planeta"/>
           </Link>
         <div className="div-room-button">
