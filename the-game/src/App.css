@@ -287,6 +287,42 @@ a:hover {
   }
 }
 
+.shiny {
+  width: 5px;
+  height: 5px;
+  z-index: 9999;
+  background-color: white; 
+  border-radius: 50%;
+  box-shadow: 0 0 20px 10px white; 
+  position: absolute;
+  top: 25%; 
+  left: 38%; 
+  transform: translate(-50%, -50%); 
+  opacity: 0; 
+  animation: shine 2s 15s 1 forwards;
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0; 
+  }
+  50% {
+    opacity: 1; 
+  }
+  60% {
+    opacity: 0; 
+  }
+  70% {
+    opacity: 1; 
+  }
+  80% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1; 
+  }
+}
+
 
 
 /************ Info Css ************/
