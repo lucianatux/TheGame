@@ -6,7 +6,7 @@ import { Intro } from "./components/Intro";
 import { Room } from "./components/Room";
 import { InnerPanel } from "./components/InnerPanel";
 import { OuterPanel } from "./components/OuterPanel";
-import { Beliefs } from "./components/Beliefs";
+/*import { Beliefs } from "./components/Beliefs";
 import { Consciousness } from "./components/Consciousness";
 import { Contact } from "./components/Contact";
 import { Feelings } from "./components/Feelings";
@@ -14,12 +14,16 @@ import { Memory } from "./components/Memory";
 import { Perceptions } from "./components/Perceptions";
 import { Responses } from "./components/Responses";
 import { Thoughts } from "./components/Thoughts";
-import { World } from "./components/World";
+import { World } from "./components/World";*/
+import {Layout} from "./components/Layout"; 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+    <Layout>
+      <Home />
+    </Layout>),
     errorElement: <h1>ERROR</h1>,
   },
   {
@@ -28,7 +32,10 @@ const router = createBrowserRouter([
   },
   {
     path: "/intro",
-    element: <Intro />,
+    element: (
+      <Layout>
+        <Intro />
+      </Layout>),
   },
   {
     path: "/room",
@@ -42,7 +49,7 @@ const router = createBrowserRouter([
     path: "/outerpanel",
     element: <OuterPanel />,
   },
-  {
+  /*{
     path: "/beliefs",
     element: <Beliefs />,
   },
@@ -77,7 +84,7 @@ const router = createBrowserRouter([
   {
     path: "/world",
     element: <World />,
-  },
+  },*/
 ]);
 
 function App() {

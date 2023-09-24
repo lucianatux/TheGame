@@ -12,8 +12,8 @@ export const Intro = () => {
         <Link to="/room">
           <div className="shooting-star1"></div>
           <div className="shooting-star2"></div>
-          <div className="shiny"></div>
-            <img src={planeta} alt="planeta" className="planeta"/>
+         {/* <div className="shiny"></div> */}
+         <img src={planeta} alt="planeta" className="planeta"/>
           </Link>
         <div className="div-room-button">
           

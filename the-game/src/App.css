@@ -146,6 +146,12 @@ a:hover {
   font-size: 30px;
   letter-spacing: -3px;
 }
+.music{
+  font-size: 30px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
 .social-icon {
   display: inline-block;
 }
@@ -223,7 +229,7 @@ a:hover {
   position: fixed; 
   top: 80%; 
   left: 50%; 
-  transform: translateX(-50%); /* Centra la imagen horizontalmente */
+  transform: translateX(-50%); 
   animation: expandAndMoveUp 15s ease forwards;
 }
 /*animación expandAndMoveUp */
@@ -232,7 +238,7 @@ a:hover {
     width: 50px;
     height: 50px;
     opacity: 1;
-    top: 80%; 
+    top: 80%;
   }
   30% {
     width: 50px; 
@@ -286,7 +292,7 @@ a:hover {
     transform: translateY(100vh) translateX(5vw); /* Desciende hasta fuera de la vista abajo */
   }
 }
-
+/*
 .shiny {
   width: 5px;
   height: 5px;
@@ -321,7 +327,7 @@ a:hover {
   100% {
     opacity: 1; 
   }
-}
+}*/
 
 
 
