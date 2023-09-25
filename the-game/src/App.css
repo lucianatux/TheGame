@@ -224,15 +224,16 @@ a:hover {
   background-image: url("./assets/universo6.png");
 }
 .planeta {
-  width: 50px;
-  height: 50px;
+  width: 10px;
+  height: 10px;
   position: fixed; 
   top: 80%; 
   left: 50%; 
-  transform: translateX(-50%); 
-  animation: expandAndMoveUp 15s ease forwards;
+  transform: rotate(25deg);
+  animation: expandAndMoveUp 20s 5s ease forwards;
 }
 /*animación expandAndMoveUp */
+/*
 @keyframes expandAndMoveUp {
   0% {
     width: 50px;
@@ -240,7 +241,7 @@ a:hover {
     opacity: 1;
     top: 80%;
   }
-  30% {
+  60% {
     width: 50px; 
     height: 50px; 
     opacity: 1; 
@@ -251,8 +252,23 @@ a:hover {
     width: 3000px; 
     height: 3000px; 
     opacity: 1; 
-    top: calc(100vh - 2800px); /* El extremo inferior cubre la pantalla */
+    top: calc(100vh - 2800px);
     left: 20%;
+  }
+}*/
+@keyframes expandAndMoveUp {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    transform: translateX(0vh) translateY(0vh);
+    transform: rotate(25deg);
+  }
+  100% {
+    width: 3000px; 
+    height: 3000px; 
+    opacity: 1; 
+    transform: translateX(-235vh) translateY(-350vh) rotate(0deg);
   }
 }
 
@@ -262,8 +278,8 @@ a:hover {
   background-color: var(--grey2-color);
   border-radius: 50%;
   position: absolute;
-  transform: translateY(-100%) translateX(70vw); /* Inicialmente, la estrella está fuera de la vista arriba */
-  animation: estrellaFugaz1 30s linear forwards; /* Ajusta la duración según tus preferencias */
+  transform: translateY(-100%) translateX(70vw); 
+  animation: estrellaFugaz1 30s linear forwards;
 }
 
 @keyframes estrellaFugaz1 {
@@ -271,7 +287,7 @@ a:hover {
     transform: translateY(-100%) translateX(70vw);
   }
   100% {
-    transform: translateY(100vh) translateX(90vw); /* Desciende hasta fuera de la vista abajo */
+    transform: translateY(100vh) translateX(90vw); 
   }
 }
 
@@ -281,7 +297,7 @@ a:hover {
   background-color: var(--light-color);
   border-radius: 50%;
   position: absolute;
-  transform: translateY(50vh) translateX(30vw); /* Inicialmente, la estrella está fuera de la vista arriba */
+  transform: translateY(50vh) translateX(30vw); 
   animation: estrellaFugaz2 40s linear forwards; 
 }
 @keyframes estrellaFugaz2 {
@@ -289,7 +305,7 @@ a:hover {
     transform: translateY(50vh) translateX(30vw);
   }
   100% {
-    transform: translateY(100vh) translateX(5vw); /* Desciende hasta fuera de la vista abajo */
+    transform: translateY(100vh) translateX(5vw); 
   }
 }
 /*
