@@ -14,12 +14,12 @@ export const MusicPlayer = () => {
   };
 
   return (
-    <div>
+    <section className="music-player">
       <button className="game-button music" id="music" onClick={toggleMusic}>
         &#9835;
       </button>
       <audio ref={audioRef} src={soundtrack} />
-    </div>
+    </section>
   );
 };
 export default MusicPlayer;
