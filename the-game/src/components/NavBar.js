@@ -32,7 +32,8 @@ export const NavBar = () => {
         <Link to="/info" className="item">
           Info
         </Link>
-        <button className="game-button music" id="music" onClick={toggleMusic}>
+        <button className={musicPlaying ? 'game-button music music-playing' : 'game-button music'}
+       id="music" onClick={toggleMusic}>
            &#9835;
         </button>
         <audio ref={audioRef} src={soundtrack} />
