@@ -1,6 +1,5 @@
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { NavBar } from "../components/NavBar";
 import { OuterPanel } from "../components/OuterPanel";
 
 
@@ -8,7 +7,6 @@ export const Room = () => {
   return (
     <section id="room">
       <Container>
-        <NavBar />
         <OuterPanel/>
         <div className="title">Room</div>
           <p className="arrow arrow-up">&#8593;</p>

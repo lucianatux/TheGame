@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import soundtrack from "../sounds/November.mp3";
+import {NavBar} from "../components/NavBar";
+
 
 export const MusicPlayer = () => {
   const [musicPlaying, setMusicPlaying] = useState(false);
@@ -15,10 +16,7 @@ export const MusicPlayer = () => {
 
   return (
     <section className="music-player">
-      <button className="game-button music" id="music" onClick={toggleMusic}>
-        &#9835;
-      </button>
-      <audio ref={audioRef} src={soundtrack} />
+      <NavBar/>
     </section>
   );
 };

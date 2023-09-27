@@ -39,7 +39,10 @@ const router = createBrowserRouter([
   },
   {
     path: "/room",
-    element: <Room />,
+    element:  (
+      <Layout>
+        <Room />
+      </Layout>),
   },
   {
     path: "/innerpanel",
@@ -89,7 +92,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <RouterProvider router={router}/>
   );
 }
 
