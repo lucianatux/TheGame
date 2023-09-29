@@ -4,7 +4,7 @@ import navIcon1 from "../assets/nav-icon1.svg";
 import navIcon2 from "../assets/nav-icon2.svg";
 import navIcon3 from "../assets/nav-icon3.svg";
 import { Link } from "react-router-dom";
-import soundtrack from "../sounds/DaPacemDomine.mp3";
+import soundtrack from "../sounds/lalibertad.mp3";
 import React, { useState } from "react";
 
 

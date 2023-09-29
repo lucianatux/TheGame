@@ -9,14 +9,8 @@ export const OuterPanel = () => {
         <Link to="/room">
           <button className="game-button">ROOM</button>
         </Link>
-        <Link to="/room">
-          <button className="game-button">ROOM</button>
-        </Link>
-        <Link to="/room">
-          <button className="game-button">ROOM</button>
-        </Link>
-        <Link to="/room">
-          <button className="game-button">ROOM</button>
+        <Link to="/responses">
+          <button className="game-button">Responses</button>
         </Link>
       </Navbar>
     </section>
