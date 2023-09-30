@@ -1,5 +1,5 @@
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Info } from "./components/Info";
 import { Intro } from "./components/Intro";
@@ -62,13 +62,6 @@ const router = createBrowserRouter([
       </Layout>),
   },
   {
-    path: "/responses",
-    element:  (
-      <Layout>
-        <Responses />
-      </Layout>),
-  },
-  {
     path: "/innerpanel",
     element: <InnerPanel />,
   },
@@ -116,7 +109,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <RouterProvider router={router}/>
+    <RouterProvider router={router}>
+        <Route path="/responses" component={Responses} />
+    </RouterProvider>
   );
 }
 

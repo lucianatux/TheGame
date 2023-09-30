@@ -7,6 +7,7 @@
   --grey2-color: #999;
   --transp1-color: #d9d9d91a;
   --transp2-color: #ffffff80;
+  --transp3-color: #01010171;
   --first-color: #410cab;
   --second-color: #9d3172;
   --third-color: #d3a61d;
@@ -407,5 +408,27 @@ a:hover {
 }
 .outer-navbar a{
   margin: 0 15px;
+}
+/************ Responses Css ************/
+#responses {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 60vh;
+}
+.response-button{
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--transp3-color);
+  color: var(--light-color);
+  text-align: center;
+}
+.response-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 

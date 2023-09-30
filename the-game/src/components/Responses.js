@@ -1,26 +1,19 @@
 
 import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 
 export const Responses = () => {
   return (
     <section id="responses">
       <Container>
-        <div className="title">Info</div>
-        <p>lorem ipsum dolor sit amet, consectetur adip</p>
-        <p>
-            lorem ipsum dolor sit amet, 
-            consectetur adip lorem ipsum 
-            dolor sit amet lorem et lorem 
-            ipsum dolor sit amet
-        </p>
+        <div className="title">Responses</div>
+        <div className="response-box">
+        <p className="response-button">Situation 1: gbhfdsklgk bgkhhg bhgfthoit brtdhygiuoy</p>
+        <button className="response-button"><p className="response resp-first">situation 1 response 1</p></button>
+        <button className="response-button"><p className="response resp-second">situation 1 response 2</p></button>
+        <button className="response-button"><p className="response resp-third">situation 1 response 3</p></button>
+        </div>       
         <img src="" alt=""/>
-        <div className="div-home-button">
-          <Link to="/">
-            <button className="game-button">Home</button>
-          </Link>
-        </div>
       </Container>
     </section>
   );
