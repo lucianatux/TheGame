@@ -420,7 +420,7 @@ a:hover {
 .response-button{
   width: 90%;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
   background-color: var(--transp3-color);
   color: var(--light-color);
   text-align: center;
