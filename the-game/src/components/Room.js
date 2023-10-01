@@ -8,8 +8,9 @@ export const Room = () => {
 
   return (
     <section id="room1" className="room">
+       <OuterPanel />
       <Container>
-        <OuterPanel />
+       
         <div className="title">Room</div>
         {/*<p className="arrow arrow-up">&#8593;</p>*/}
         <Link to="/room2">

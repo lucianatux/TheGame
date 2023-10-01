@@ -69,8 +69,9 @@ a:hover {
   text-align: center;
 }
 .title {
-  font-size: 30px;
+  font-size: 15px;
   margin-top: 10px;
+  padding: 5px;
 }
 .arrow{
   font-size: 30px;
@@ -109,6 +110,7 @@ a:hover {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 13px;
   background: linear-gradient(to bottom, var(--grey1-color), var(--light-color));
+  margin: 5px;
 }
 .game-button:hover {
   border: 2px solid var(--grey1-color);
@@ -126,16 +128,18 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 .item {
   color: var(--light-color);
   font-size: 20px;
   margin: 0 15px;
+  text-decoration: none;
 }
 .logo {
   max-width: 40px;
   border-radius: 15px;
-  margin: 0 20px;
+  margin: 0 15px;
 }
 .navbarbrand{
   display: flex;
@@ -145,14 +149,15 @@ a:hover {
 }
 .the-game{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
+  font-size: 22px;
   letter-spacing: -3px;
+  margin: 0;
 }
 .music{
   font-size: 30px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
 }
 .music-playing{
   background: linear-gradient(to bottom, var(--second-color), var(--light-color));

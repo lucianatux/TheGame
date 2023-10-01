@@ -2,6 +2,8 @@ import { Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {Responses} from "../components/Responses";
 import React, { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export const OuterPanel = () => {
 
@@ -24,6 +26,7 @@ export const OuterPanel = () => {
           Responses
         </button>
         {showResponses && <Responses />}
+        <p className="m-3">Consciousness</p>
       </Navbar>
     </section>
   );

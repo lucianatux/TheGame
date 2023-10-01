@@ -12,6 +12,9 @@ export const InnerPanel = () => {
           <Link to="/room">
             <button className="game-button">ROOM</button>
           </Link>
+          <Link to="/thoughts">
+            <button className="game-button">THOUGHTS</button>
+          </Link>
         </div>
       </Container>
     </section>

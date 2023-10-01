@@ -5,8 +5,9 @@ import { OuterPanel } from "../components/OuterPanel";
 export const Room2 = () => {
   return (
     <section id="room2" className="room">
+         <OuterPanel />
       <Container>
-        <OuterPanel />
+     
         <div className="title">Room2</div>
         <p className="arrow arrow-up">&#8593;</p>
         <p className="arrow arrow-down">&#8595;</p>
