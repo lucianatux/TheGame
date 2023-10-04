@@ -15,6 +15,9 @@ export const InnerPanel = () => {
           <Link to="/thoughts">
             <button className="game-button">THOUGHTS</button>
           </Link>
+          <Link to="/feelings">
+            <button className="game-button">FEELINGS</button>
+          </Link>
         </div>
       </Container>
     </section>
