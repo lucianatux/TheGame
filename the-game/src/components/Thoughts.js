@@ -45,6 +45,7 @@ export const Thoughts = () => {
     });
   };
 
+
   return (
     <section id="thoughts">
       <Container>
