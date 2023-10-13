@@ -11,8 +11,9 @@ import { OuterPanel } from "./components/OuterPanel";
 import { Responses } from "./components/Responses";
 import { Thoughts } from "./components/Thoughts";
 import { Feelings } from "./components/Feelings";
+import { Beliefs } from "./components/Beliefs";
 
-/*import { Beliefs } from "./components/Beliefs";
+/*
 import { Consciousness } from "./components/Consciousness";
 import { Contact } from "./components/Contact";
 import { Memory } from "./components/Memory";
@@ -77,10 +78,11 @@ const router = createBrowserRouter([
     path: "/feelings",
     element: <Feelings/>,
   },
-  /*{
+  {
     path: "/beliefs",
     element: <Beliefs />,
   },
+  /*
   {
     path: "/consciousness",
     element: <Consciousness />,
