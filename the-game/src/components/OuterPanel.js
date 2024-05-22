@@ -27,6 +27,9 @@ export const OuterPanel = () => {
         </button>
         {showResponses && <Responses />}
         <p className="m-3">Consciousness</p>
+        <Link to="/consciousness">
+          <button className="game-button">Consciousness</button>
+        </Link>
       </Navbar>
     </section>
   );
